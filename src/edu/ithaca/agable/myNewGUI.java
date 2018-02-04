@@ -18,10 +18,10 @@ public class myNewGUI extends JFrame {
         regular = new JButton("Regular");
         add(regular);
 
-        ImageIcon redButton = createImageIcon("edu/ithaca/agable/redButton.png","my red button");
-        ImageIcon blueButton = createImageIcon("edu/ithaca/agable/blueButton.png","my blue button");
-//        Icon blueButton = new ImageIcon(getClass().getResource("C:\\Users\\Alex\\Documents\\2017-2018\\SP2018\\325\\Impl_01\\src\\edu\\ithaca\\agable\\blueButton.png"));
-//        Icon redButton = new ImageIcon(getClass().getResource("C:\\Users\\Alex\\Documents\\2017-2018\\SP2018\\325\\Impl_01\\src\\edu\\ithaca\\agable\\redButton.png"));
+//        ImageIcon redButton = createImageIcon("/redButton.png","my red button");
+//        ImageIcon blueButton = createImageIcon("/blueButton.png","my blue button");
+        Icon blueButton = new ImageIcon(getClass().getResource("/blueButton.png"));
+        Icon redButton = new ImageIcon(getClass().getResource("/redButton.png"));
         custom = new JButton("Custom",blueButton);
         custom.setRolloverIcon(redButton);
         add(custom);
